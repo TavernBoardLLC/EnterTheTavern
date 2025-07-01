@@ -1,0 +1,86 @@
+/* ==========================================
+   🛡️ BRANDING PLAQUE — branding.css
+   Styles the center branding plaque on homepage
+========================================== */
+
+/* ------------------------------
+   📦 CONTAINER SETUP
+---------------------------------*/
+.branding-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;          /* 📝 Adjust plaque and all contents width */
+  max-width: 90vw;       /* 📝 Prevents plaque from being wider than viewport */
+  z-index: 10;
+}
+
+/* ------------------------------
+   🖼️ BACKGROUND IMAGE (Plaque)
+---------------------------------*/
+.plaque-image {
+  width: 100%;           /* 📝 Scales with .branding-container */
+  height: auto;
+  display: block;
+}
+
+/* ------------------------------
+   🪞 CONTENT OVERLAY
+---------------------------------*/
+.branding-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;             /* 📝 Controls layout of inner items */
+  flex-direction: column;
+  align-items: center;       /* 📝 Horizontally center items */
+  justify-content: center;   /* 📝 Vertically center items */
+
+  padding: 2rem;             /* 📝 Adjust spacing inside plaque */
+  text-align: center;
+  pointer-events: none;      /* 📝 Allows button to be clickable only if set to auto */
+}
+
+/* ------------------------------
+   🧿 FOUNDER’S LOGO
+---------------------------------*/
+.founders-logo {
+  width: 100px;               /* 📝 Adjust logo size */
+  height: auto;
+  margin-bottom: 1rem;       /* 📝 Spacing below logo */
+}
+
+/* ------------------------------
+   🧾 BRAND TITLE TEXT
+---------------------------------*/
+.branding-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  font-size: 1.8rem;         /* 📝 Adjust title text size */
+  color: #5c4b2b;
+  margin-bottom: 0.8rem;     /* 📝 Space between title and button */
+}
+
+/* ------------------------------
+   🔘 "ENTER" BUTTON STYLE
+---------------------------------*/
+.enter-btn {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;           /* 📝 Adjust button text size */
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #c9aa71;
+  padding: 0.4rem 1.2rem;    /* 📝 Adjust overall button size */
+  cursor: pointer;
+  pointer-events: auto;      /* 📝 Needed for clickability inside branding-overlay */
+  transition: background 0.3s;
+}
+
+.enter-btn:hover {
+  background-color: #c9aa71;
+  color: #000;
+}

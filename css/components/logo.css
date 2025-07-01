@@ -1,0 +1,49 @@
+/* ===============================
+   🧿 LOGO STYLESHEET — logo.css
+   Controls styling for all logos across the site
+================================= */
+
+/* ---------------------------------
+   🏰 SECTION: Main Site Logo
+   Used in header and homepage hero areas
+---------------------------------- */
+.main-logo {
+  width: 250px;                /* Standard display size */
+  height: auto;
+  max-width: 100%;             /* Ensures responsiveness */
+  display: block;
+  margin: 0 auto;              /* Centers logo in container */
+}
+
+/* ---------------------------------
+   📌 SECTION: Small Logo Variant
+   Used in navbars or compact elements
+---------------------------------- */
+.logo-sm {
+  width: 120px;
+  height: auto;
+}
+
+/* ---------------------------------
+   🧱 SECTION: Footer Logo Variant
+   Optional: Footer-specific display rules
+---------------------------------- */
+.logo-footer {
+  width: 180px;
+  height: auto;
+  margin: 1rem auto 0;
+  display: block;
+  opacity: 0.85;               /* Slight fade effect */
+}
+
+/* ---------------------------------
+   🎨 SECTION: Color/Theme Utilities
+   Use filters for light/dark mode variations if needed
+---------------------------------- */
+.logo-goldtone {
+  filter: brightness(1.1) sepia(1) hue-rotate(20deg) saturate(1.5);
+}
+
+.logo-muted {
+  opacity: 0.6;
+}

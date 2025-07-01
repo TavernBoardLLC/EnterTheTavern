@@ -1,0 +1,24 @@
+/* ============================
+   🧱 BASE STYLESHEET (style.css)
+   Global resets, typography, and base theming
+============================ */
+
+/* ============================
+   🔄 Reset + Box Model
+   Ensures consistent layout behavior across browsers
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Includes padding/border in element's total width/height */
+}
+
+/* ============================
+   🌐 HTML + BODY Defaults
+   Sets the base font and background
+============================ */
+html, body {
+  font-family: 'Cinzel', serif;  /* Primary fantasy serif font for branding */
+  color: #f5f5f5;                /* Light text color for readability on dark backgrounds */
+  background-color: #000;        /* Global dark theme background */
+}

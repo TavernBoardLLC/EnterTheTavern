@@ -1,0 +1,152 @@
+/* ===============================
+   🎲 GRID STYLES — grid.css
+   Used for layout of feature cards, game grids, and icon blocks
+================================= */
+
+/* ---------------------------------
+   🧱 Grid Container for Cards (flex layout)
+---------------------------------- */
+.grid-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+/* ---------------------------------
+   🃏 Individual Grid Cards
+---------------------------------- */
+.grid-card {
+  background: rgba(25, 18, 5, 0.85);
+  color: #f4e8c1;
+  font-family: 'Cinzel', serif;
+  text-decoration: none;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 12px rgba(255, 222, 130, 0.5);
+}
+
+.grid-card img {
+  width: 70px;
+  margin-bottom: 1rem;
+}
+
+.grid-card h2 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+
+/* ===============================
+   🧭 GRID EXTENSIONS — Multi-Column Layouts
+================================= */
+
+/* ===============================
+   🧭 GRID EXTENSIONS — Multi-Column Layouts
+================================= */
+
+/* 🔳 3-Column Flex Grid with Responsive Wrapping */
+.grid-3col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🔲 2-Column Grid (used for controlled side-by-side blocks) */
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🧩 Individual Columns Inside Grid */
+.grid-col {
+  flex: 1 1 0;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   📱 Responsive Adjustments
+================================= */
+
+/* 📏 Tablet Breakpoint — 2 columns */
+@media (max-width: 900px) {
+  .grid-3col {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .grid-col {
+    flex: 1 1 45%;
+    max-width: 48%;
+  }
+}
+
+/* 📱 Mobile Breakpoint — 1 column */
+@media (max-width: 600px) {
+  .grid-2col,
+  .grid-3col {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .grid-col {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ===============================
+   📱 RESPONSIVE ADJUSTMENTS
+================================= */
+@media (max-width: 900px) {
+  .grid-3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-2col,
+  .grid-3col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===============================
+   ✏️ Helper Styling for Notes
+================================= */
+.note {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #e0d2a0;
+  text-align: center;
+}

@@ -1,0 +1,157 @@
+/* ====================================
+   🌐 SHARED GLOBAL STYLES
+   Applies across all pages
+==================================== */
+
+/* 🔤 Font & Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif; /* Primary body font */
+  font-size: 16px;
+  background-color: #0e0c07;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* ===========================
+   🧭 Utility Classes
+=========================== */
+
+.text-center {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ===========================
+   🔗 Links
+=========================== */
+
+a {
+  color: #c9aa71;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #e0c387;
+  text-decoration: underline;
+}
+
+/* ===========================
+   🖼️ Images
+=========================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===========================
+   🔘 Buttons
+=========================== */
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #c9aa71;
+  color: #120d04;
+  border-radius: 8px;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e0c387;
+}
+
+/* ===========================
+   🌀 Section Spacing
+=========================== */
+
+.section {
+  padding: 4rem 1rem;
+}
+
+.section.dark {
+  background-color: #1e1b14;
+}
+
+.section.light {
+  background-color: #f5f5f5;
+  color: #120d04;
+}
+
+/* ===========================
+   📣 Headings
+=========================== */
+
+h1, h2, h3, h4 {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  color: #c9aa71;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+/* ===========================
+   📦 Cards & Grid Helpers
+=========================== */
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #c9aa71;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(201, 170, 113, 0.25);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}

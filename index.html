@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Official Website for Tavern & Board - an immersive fantasy brand. Enter our world.">
+  <title>Tavern & Board</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Inter&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/components/header.css" />
+  <link rel="stylesheet" href="css/components/frame.css" />
+  <link rel="stylesheet" href="css/components/buttons.css" />
+  <link rel="stylesheet" href="css/pages/branding.css" />
+  <link rel="stylesheet" href="css/components/footer.css" />
+  <link rel="stylesheet" href="css/pages/hero.css" />
+  <link rel="stylesheet" href="css/base/style.css" /> <!-- Always last -->
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <p>Welcome to Tavern & Board</p>
+    </div>
+  </header>
+
+
+  <!-- Hero & Branding -->
+<section class="hero">
+  <div class="branding-container">
+    <img src="assets/images/plaque.png" alt="Plaque" class="plaque-image" />
+    <div class="branding-overlay">
+      <img src="assets/images/themark.png" alt="Founder's Mark" class="founders-logo" />
+      <div class="branding-title">Tavern & Board</div>
+      <button class="enter-btn">Enter Here</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <p class="footer-text">
+      © Tavern & Board LLC | 
+      <a href="/privacy.html">Privacy Policy</a> | 
+      <a href="/terms.html">Terms of Use</a>
+    </p>
+<div class="footer-socials">
+  <a href="https://www.facebook.com/tavernboardllc" target="_blank" rel="noopener">
+    <img src="assets/icons/facebook.png" alt="Facebook" class="social-icon" />
+  </a>
+  <a href="https://www.instagram.com/tavernboardllc" target="_blank" rel="noopener">
+    <img src="assets/icons/instagram.png" alt="Instagram" class="social-icon" />
+  </a>
+  <a href="mailto:contact@tavernboardllc.com">
+    <img src="assets/icons/email.png" alt="Email" class="social-icon" />
+  </a>
+</div>
+
+</footer>
+
+  <!-- JS script -->
+<script>
+document.querySelector('.enter-btn').addEventListener('click', function() {
+  window.location.href = 'dashboard.html';
+});
+
+</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

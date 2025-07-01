@@ -1,0 +1,227 @@
+/* ==========================================
+   💼 INVESTOR PAGE STYLES — investor.css
+   Structured layout for investor-facing content, 
+   including overview, downloads, and contact form.
+========================================== */
+
+/* ------------------------------
+   🗺️ MAP HEADER SECTION
+---------------------------------*/
+.investor-map-header {
+  position: relative;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/images/goldmap.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f4ecd9;
+  text-align: center;
+  padding: 3rem 2rem;
+  z-index: 1;
+}
+
+.investor-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 10, 5, 0.5);
+  z-index: 0;
+}
+
+.investor-header h1,
+.investor-header p {
+  position: relative;
+  z-index: 1;
+}
+
+/* ------------------------------
+   📄 MAIN SECTION STYLING
+---------------------------------*/
+.investor-section {
+  position: relative;
+  margin-top: -6rem; /* Pull section upward to overlap */
+  padding: 6rem 2rem 4rem;
+  background-color: rgba(14, 13, 10, 0.92);
+  color: #f5f5f5;
+  font-family: 'Lora', serif;
+  z-index: 2;
+}
+
+.investor-section h1,
+.investor-section h2 {
+  font-family: 'Cinzel', serif;
+  color: #c9aa71;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.investor-section p {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* ------------------------------
+   📎 DOWNLOAD LINKS
+---------------------------------*/
+.download-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.download-card {
+  background-color: #1a1a1a;
+  border: 1px solid #c9aa71;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(201, 170, 113, 0.2);
+}
+
+.download-card h3 {
+  color: #f4ecd9;
+  margin-bottom: 0.5rem;
+  font-family: 'Cinzel', serif;
+}
+
+.download-card p {
+  font-size: 0.95rem;
+  color: #eae7d8;
+}
+
+.download-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #c9aa71;
+  color: #1a1a1a;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-card a:hover {
+  background-color: #e0c285;
+}
+
+/* ------------------------------
+   ✉️ CONTACT FORM
+---------------------------------*/
+.contact-investor {
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px rgba(201, 170, 113, 0.4);
+}
+
+.contact-investor form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-investor label {
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+.contact-investor input,
+.contact-investor textarea {
+  padding: 0.75rem;
+  background-color: #1e1e1e;
+  border: 1px solid #c9aa71;
+  color: #f5f5f5;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-investor input:focus,
+.contact-investor textarea:focus {
+  outline: none;
+  border-color: #f4d992;
+  background-color: #29241d;
+}
+
+.contact-investor button {
+  background-color: #c9aa71;
+  color: #1e1e1e;
+  border: none;
+  padding: 0.75rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.contact-investor button:hover {
+  background-color: #e0c285;
+}
+.investor-map-header {
+  position: relative;
+  height: 80vh;
+  background-image: url('/assets/images/goldmap.png'); /* ✅ Adjust if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  z-index: 1;
+  color: #f4ecd9;
+}
+
+.investor-map-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 10, 5, 0.5);
+  z-index: 0;
+}
+
+.investor-map-content {
+  position: relative;
+  z-index: 1;
+}
+
+.investor-map-content h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #c9aa71;
+}
+
+.investor-map-content p {
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #f4ecd9;
+}

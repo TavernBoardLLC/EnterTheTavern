@@ -1,0 +1,119 @@
+/* ============================
+   📚 LORE PAGE STYLES
+   Handles layout and styles for the lore.html page,
+   including introduction, grid blocks, and world-entry CTA.
+============================ */
+
+
+/* ----------------------------------
+   🧱 BASE CONTENT WRAPPER
+---------------------------------- */
+.lore-content {
+  position: relative;
+  z-index: 5;
+  padding: 4rem 1rem 6rem;
+  text-align: center;
+  color: #f0e6d2;
+  background-color: #1a1a1a; /* Optional: improve readability over map */
+}
+
+
+/* ----------------------------------
+   ✍️ INTRO TEXT PARAGRAPH
+---------------------------------- */
+.lore-intro {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* ----------------------------------
+   🧩 LORE GRID SECTION
+---------------------------------- */
+.lore-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+
+/* 🪶 Individual Lore Card Block */
+.lore-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  background: rgba(25, 18, 5, 0.85);
+  color: #f4e8c1;
+  font-family: 'Cinzel', serif;
+  text-decoration: none;
+  
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 260px;
+  height: 260px;
+  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lore-block img {
+  width: 70px;
+  margin-bottom: 1rem;
+}
+
+.lore-block h2 {
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.lore-block:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 12px rgba(255, 222, 130, 0.5);
+  cursor: pointer;
+}
+
+/* 📝 To add more lore entries, 
+   just include more .lore-block elements inside the .lore-grid container.
+*/
+
+
+/* ----------------------------------
+   🌍 EXPLORE WORLD CTA BLOCK
+---------------------------------- */
+.enter-world-block {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.enter-world-block p {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  color: #f0e6d2;
+}
+
+
+/* 🧭 Explore Button */
+.button-link {
+  display: inline-block;
+  background-color: #c9aa71;
+  color: #1a1a1a;
+  font-family: 'Cinzel', serif;
+  font-size: 1.05rem;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-link:hover {
+  background-color: #e0c387;
+  transform: scale(1.05);
+  cursor: pointer;
+}

@@ -1,0 +1,97 @@
+/* ===============================
+   🗺️ MAP SECTION — colormap.css
+   Styles for fantasy world map and link overlays
+================================ */
+
+/* ---------------------------------
+   📌 MAIN BACKGROUND SETUP
+   Applies full-size fantasy map with top-aligned content
+---------------------------------- */
+.colormap-section {
+  position: relative;
+  background-image: url('../../assets/images/colormap.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+
+/* ---------------------------------
+   🌘 DARK OVERLAY LAYER
+   Adds semi-transparent layer over the map
+---------------------------------- */
+.colormap-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* ---------------------------------
+   📝 CONTENT OVER MAP
+   Centers title or intro text on the map
+---------------------------------- */
+.colormap-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #c9aa71;
+  font-family: 'Cinzel', serif;
+}
+
+/* ---------------------------------
+   📍 MAP LINKS
+   Clickable icons representing realms or areas
+---------------------------------- */
+.map-link {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #c9aa71;
+  font-family: 'Cinzel', serif;
+  transition: transform 0.3s ease;
+  z-index: 3;
+}
+
+.map-link img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 4px;
+}
+
+.map-link span {
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.map-link:hover {
+  transform: scale(1.1);
+}
+
+/* ---------------------------------
+   📌 LINK POSITIONS
+   Custom placement of realm buttons on the map
+---------------------------------- */
+
+/* Left-aligned markers */
+.left-link.link-1 { top: 20%; left: 8%; }
+.left-link.link-2 { top: 40%; left: 8%; }
+.left-link.link-3 { top: 60%; left: 8%; }
+
+/* Right-aligned markers */
+.right-link.link-1 { top: 20%; right: 8%; }
+.right-link.link-2 { top: 40%; right: 8%; }
+.right-link.link-3 { top: 60%; right: 8%; }

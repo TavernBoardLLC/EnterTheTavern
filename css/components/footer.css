@@ -1,0 +1,68 @@
+/* ===============================
+   ⚓ FOOTER STYLES — footer.css
+   Styles for bottom site footer and social icons
+================================ */
+
+/* ---------------------------------
+   🔲 FOOTER CONTAINER
+   Sets layout, background, and text styling
+---------------------------------- */
+.site-footer {
+  background-color: #111;
+  color: #c9aa71;
+  text-align: center;
+  padding: 1rem 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------------------------------
+   📏 INNER FOOTER LAYOUT
+   Limits content width and centers it
+---------------------------------- */
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------
+   📣 SOCIAL ICONS
+   Icons with hover scale and spacing
+---------------------------------- */
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.footer-socials a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.1);
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* ---------------------------------
+   🔗 FOOTER NAVIGATION LINKS
+   Horizontal links with gold theme
+---------------------------------- */
+.footer-links a {
+  color: #c9aa71;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

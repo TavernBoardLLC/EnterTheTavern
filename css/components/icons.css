@@ -1,0 +1,62 @@
+/* ===============================
+   🛡️ ICON STYLESHEET — icon.css
+   Controls size, color, and behavior of all icon assets
+================================= */
+
+/* ---------------------------------
+   ⚙️ SECTION: Base Icon Style
+   Applies to all icon images by default
+---------------------------------- */
+.icon {
+  width: 40px;                             /* Standard size */
+  height: auto;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* ---------------------------------
+   💫 SECTION: Hover Effect
+   Gently enlarges icons on interaction
+---------------------------------- */
+.icon:hover {
+  transform: scale(1.1);                  /* Slight zoom */
+}
+
+/* ---------------------------------
+   🧭 SECTION: Large Map Icons
+   Specifically for realm markers on fantasy maps
+---------------------------------- */
+.map-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 4px;                     /* Space between icon and label */
+}
+
+/* ---------------------------------
+   🌐 SECTION: Social Media Icons
+   Larger for better touch targets in footer
+---------------------------------- */
+.social-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* ---------------------------------
+   🎨 SECTION: Themed Icon Colors (Optional)
+   Can be applied to inline SVGs or filtered images
+---------------------------------- */
+.icon-gold {
+  filter: brightness(1.2) sepia(1) hue-rotate(20deg) saturate(2);
+}
+
+.icon-muted {
+  opacity: 0.6;
+}
+
+/* ---------------------------------
+   🧷 SECTION: Utility Sizing Classes
+   For quick overrides where needed
+---------------------------------- */
+.icon-sm { width: 24px; }
+.icon-md { width: 40px; }
+.icon-lg { width: 64px; }

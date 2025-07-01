@@ -1,0 +1,104 @@
+/* ==========================================
+   ✒️ TYPOGRAPHY STYLES — typography.css
+   Defines consistent font families, heading sizes,
+   link styles, and paragraph formatting for all pages.
+========================================== */
+
+/* ------------------------------
+   FONTS
+---------------------------------*/
+body {
+  font-family: 'Cinzel', serif;
+  color: #eae7d8; /* Parchment tone */
+  background-color: transparent;
+  line-height: 1.5;
+}
+
+/* ------------------------------
+   HEADINGS
+---------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+  color: #f4ecd9;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* ------------------------------
+   PARAGRAPHS & TEXT
+---------------------------------*/
+p {
+  margin-bottom: 1em;
+  font-size: 1rem;
+  font-family: 'Lora', serif;
+}
+
+/* ------------------------------
+   LINKS
+---------------------------------*/
+a {
+  color: #c9aa71;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+a:hover {
+  color: #e0c590;
+}
+
+/* ------------------------------
+   QUOTES & EMPHASIS
+---------------------------------*/
+blockquote {
+  border-left: 4px solid #c9aa71;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #d8c69a;
+  font-style: italic;
+}
+
+em {
+  color: #f4e8c1;
+  font-style: italic;
+}
+
+strong {
+  color: #fff2c1;
+  font-weight: bold;
+}
+
+/* ------------------------------
+   SMALL TEXT & MUTED
+---------------------------------*/
+small {
+  font-size: 0.85rem;
+  color: #b9b4a1;
+  font-family: 'Inter', sans-serif;
+}
+
+.muted {
+  color: #928b7c;
+  font-style: italic;
+}
+
+/* ------------------------------
+   TEXT ALIGNMENT UTILITIES
+---------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}

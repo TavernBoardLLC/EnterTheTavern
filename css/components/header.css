@@ -1,0 +1,48 @@
+/* ===============================
+   🏰 HEADER STYLES — header.css
+   Styles for the main header bar, title, and subtitle area
+================================= */
+
+/* ---------------------------------
+   🧱 SECTION: Header Container
+   Full-width top banner with fantasy styling and gold accent border
+---------------------------------- */
+.header {
+  background-color: #1a1a1a;              /* Deep dark base to match footer */
+  padding: 2.5rem 2rem;                   /* Taller padding for stronger visual weight */
+  text-align: center;
+  color: #c9aa71;                         /* Gold tone for thematic branding */
+  font-family: 'Cinzel', serif;          /* Elegant fantasy serif */
+  border-bottom: 4px solid #c9aa71;       /* Gold accent line to separate header */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ---------------------------------
+   🧩 SECTION: Header Inner Content
+   Controls layout and spacing of title and subtitle
+---------------------------------- */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;                            /* Space between title and subtitle */
+}
+
+/* ---------------------------------
+   🏷️ SECTION: Header Title
+   Main heading in header bar
+---------------------------------- */
+.header-content h2 {
+  margin: 0;
+  font-size: 2.5rem;                      /* Large and heroic */
+}
+
+/* ---------------------------------
+   🧾 SECTION: Header Subtitle
+   Supporting tagline or message
+---------------------------------- */
+.header-content p {
+  margin: 0;
+  font-size: 1.2rem;                      /* Slightly larger for better readability */
+}
